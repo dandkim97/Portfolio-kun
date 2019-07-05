@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: Calibri;
+}
+
+/* START OF NAV SECTION */
+
+#navbar{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  top: 0;
+}
+
+#nav-right{
+  float:right;
+  padding-right: 50px;
+}
+
+#nav-right > a{
+  text-shadow: 1px 1px purple;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+#nav-right > a:hover{
+  color: purple;
+  transition: 1s;
+}
+
+/* END OF NAV SECTION */
+/* START OF WELCOME SECTION */
+
+#welcome-section{
+  margin-top: 70px;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+h1{
+  padding-top: 250px;
+  font-size: 50px;
+  text-shadow: 1px 1px purple;
+}
+
+/* END OF WELCOME SECTION */
+/* START OF ABOUT SECTION */
+
+#about{
+  padding: 200px;
+  text-align: left;
+}
+
+h2{
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px purple;
+}
+
+#about-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about-text{
+  line-height: 1.5em;
+  min-width: 400px;
+  width: 50%;
+}
+
+#about-box > img{
+  min-width: 240px;
+  min-height: 130px;
+  max-width: 340px;
+  max-width: 230px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px){
+  #about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  #about-text{
+    padding-bottom: 30px;
+  }
+
+  #about-box > img{
+    min-width: 240px;
+    min-height: 200px;
+    max-width: 240px;
+    max-height: 200px;
+  }
+}
+
+/* END OF ABOUT SECTION */
+/* START OF PROJECTS SECTION */
+
+#projects{
+  padding-bottom: 50px;
+}
+
+#projects > h2{
+  padding: 100px 0px 50px 0px;
+  text-shadow: 1px 1px purple;
+}
+
+#project-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.project-tile{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+.project-img{
+  width: 100%;
+  height: 80%;
+  border: 1px white solid;
+}
+
+.caption{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+}
+
+.code{
+  color: black;
+}
+
+.project-tile:hover .code{
+  color: #FF00FF;
+  transition: 1s;
+}
+
+@media (max-width: 1200px){
+  .project-tile{
+    width: 47%;
+  }
+}
+
+@media (max-width: 800px){
+  #project-box{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .project-tile{
+    width:100%;
+  }
+}
+
+.btn{
+  border: 2px white solid;
+  border-radius: 3px;
+  background-color: black;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.btn:hover{
+  color: purple;
+  border-color: purple;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn:hover > i{
+  transform: translateX(2px);
+}
+
+i {
+  margin-left: 5px;
+  transform: translateX(0);
+  transition: transform .2s ease-out;
+}
+
+/* END OF PROJECTS SECTION */
+/* START OF CONTACT SECTION */
+
+#contact{
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  text-shadow: 1px 1px purple;
+}
+
+.contact-div{
+  padding-top: 50px;
+  margin-left: 0px;
+}
+
+#contact-header > h2{
+  font-size: 60px;
+  text-transform: none;
+}
+
+#contact-header > p{
+  font-size:20px;
+  font-weight: 200;
+  font-style:italic;
+}
+
+#contact-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact-list > a{
+  color: white;
+  font-size: 30px;
+  padding: 5px 40px 5px 40px;
+  transition: transform 0.3s ease-out;
+  text-shadow: 1px 1px purple;
+}
+
+#contact-list > a:hover{
+  transform: translatey(8px);
+}
+
+@media (max-width: 550px){
+  #contact-header > h2{
+    font-size: 40px;
+  }
+
+  #contact-list > a{
+    font-size: 20px;
+  }
+}
+
+footer{
+  border-top: 1px solid white;
+  text-align: right;
+}
+
+footer > p{
+  padding: 50px 20px 40px 20px;
+  opacity: .7;
+}
