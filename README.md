@@ -1,4 +1,4 @@
-# Portfolio-kun
+# Portfolio-kun (prototype)
 
 ## For now, test on CodePen 
 
